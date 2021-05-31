@@ -10,3 +10,4 @@ choco install powertoys
 choco install jdk8
 choco install androidstudio
 choco install flutter
+choco install google-calendar-chrome
