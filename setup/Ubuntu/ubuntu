@@ -1,0 +1,20 @@
+#-------- g++ & others --------
+sudo apt update ; sudo apt upgrade ; sudo apt install build-essential
+#-------- tweaks --------
+sudo apt install gnome-tweaks
+#-------- VS Code --------
+sudo wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add - ; sudo
+add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable
+main" ; sudo apt update ; sudo apt install code
+#-------- Chrome --------
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+#-------- Timeshift --------
+sudo apt install timeshift
+#-------- PreLoad --------
+sudo apt install preload
+#-------- whatsapp --------
+sudo snap install whatsdesk
+#-------- CPU performance --------
+sudo apt-get install htopf
+
