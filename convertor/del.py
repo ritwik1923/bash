@@ -1,4 +1,6 @@
-import shutil, os
+import shutil
+import os
+
 
 def delfile1(path):
 
@@ -17,21 +19,24 @@ def delfile1(path):
         root = os.path.splitext(f)
         # if os.path.isdir(f) :
 
-        if root[1].lower() != '.'+ frm and root[1].lower() != '.'+ to and os.path.isdir(f) == False :
+        if root[1].lower() != '.' + frm and root[1].lower() != '.' + to and os.path.isdir(f) == False:
             print(root)
+            # print()
             # os.remove(f)
-            shutil.move(f, 'D:/bin')
+            # shutil.move(f, 'D:/bin')
 
-    #TODO: 1. add feature to enter folder and delete files
-    #TODO: 2. delete folder
+    # TODO: 1. add feature to enter folder and delete files
+    # TODO: 2. delete folder
+
 
 def main():
-    while True :
-        path=str(input("Enter path??(Exit)\n>>> "))
-        if path.lower() == "exit" :
+    while True:
+        path = str(input("Enter path??(Exit)\n>>> "))
+        if path.lower() == "exit":
             break
         delfile1(path)
     # print("Hello World!")
+
 
 if __name__ == "__main__":
     main()
